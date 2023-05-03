@@ -21,7 +21,7 @@ class CollectionMethodServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Collection::macro('deduplicate', function (?string $algo = 'sha256'): Collection {
+        Collection::macro('deduplicate', function (?string $algo = 'sha512'): Collection {
             // 指定されたアルゴリズムが使えるかどうかをチェック
             if (!in_array($algo, hash_algos(), true)) {
                 throw new InvalidArgumentException('Invalid algorithm');
