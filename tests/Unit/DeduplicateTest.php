@@ -6,6 +6,9 @@ use Illuminate\Support\Collection;
 use Kanagama\LaravelCollectionDeduplicate\Tests\TestCase;
 use Kanagama\LaravelCollectionDeduplicate\Tests\ValueObjects\User;
 
+/**
+ * @author k-nagama <k.nagama0632@gmail.com>
+ */
 class DeduplicateTest extends TestCase
 {
     /**
