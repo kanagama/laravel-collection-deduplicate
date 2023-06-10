@@ -3,6 +3,7 @@
 namespace Kanagama\LaravelCollectionDeduplicate\Tests\ValueObjects;
 
 /**
+ * @method void __construct(array $values)
  * @method int getId()
  * @method string getName()
  * @method string getTel()
@@ -33,7 +34,12 @@ class User
     private $mail;
 
     /**
-     * @param  array  $values
+     * @param  array{
+     *  id: int,
+     *  name: string,
+     *  tel: string,
+     *  mail: string,
+     * }  $values
      */
     public function __construct(array $values)
     {
